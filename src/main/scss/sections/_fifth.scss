@@ -1,0 +1,61 @@
+.fifth {
+  padding: 60px 0;
+  background: #212121;
+
+  @include for-size(desktop) {
+    padding: 120px 0;
+  }
+}
+
+.fifth .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fifth__flex {
+  @include for-size(tablet) {
+    max-width: 575px;
+    margin: 0 auto;
+  }
+}
+
+.fifth__title {
+  margin-bottom: 20px;
+
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 1.2;
+
+  color: #ffffff;
+
+  @include for-size(desktop) {
+    margin: 0 0 34px;
+  }
+}
+
+.fifth__text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.2;
+
+  color: #ffffff;
+}
+
+.fifth__img {
+  width: 100%;
+  max-width: 425px;
+  margin: 0 auto;
+
+  @include for-size(desktop) {
+    display: none;
+  }
+}
+
+.fifth__img-desk {
+  display: none;
+
+  @include for-size(desktop) {
+    display: block;
+  }
+}

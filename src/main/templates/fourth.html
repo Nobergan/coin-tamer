@@ -1,0 +1,50 @@
+<section class="fourth" id="form">
+  <img src="../img/fourth/fourth-bg-2.png" alt="рука с телефоном" class="fourth__hand">
+  <div class="container">
+    <div class="fourth__flex">
+      <h2 class="fourth__title">
+        Забудьте всё, что вы знали о криптовалютах...
+        </h1>
+        <p class="fourth__text">
+          Мы создали алгоритм, который выводит ранее спекулятивный инструмент на
+          один уровень с серьезными инвестиционными опциями, такими как
+          <b>акции, облигации и недвижимость</b>
+        </p>
+    </div>
+
+    <form method="POST" action="thanks/index.php" class="form">
+      <div class="input_wrapper">
+        <div>
+          <input name="f_name" placeholder="Ваше имя" />
+        </div>
+        <div>
+          <input name="l_name" placeholder="Ваша фамилия" />
+        </div>
+        <div>
+          <input type="email" name="email" placeholder="Ваш e-mail" />
+        </div>
+        <style>
+          .iti__flag-container {
+            z-index: 50;
+          }
+
+          .iti-mobile .iti__country-list {
+            width: 85%;
+          }
+        </style>
+        <input type="tel" name="phone" placeholder="Ваш телефон" autocomplete="off" required />
+        <input type="hidden" name="phone2" class="phone2" autocomplete="off" required />
+        <!-- Use variable from gep parameter @ first line - from php code in top of file -->
+        <input type="hidden" name="pixel_id" value="<?php echo $FacebookPixel?>" />
+        <input type="hidden" name="page_lang" value="<?php echo $page_lang?>" />
+        <input type="hidden" name="query" value="<?php echo $QUERY?>" />
+        <input type="hidden" name="gp_id" value="<?php echo $gp?>" />
+        <input type="hidden" name="hs_id" value="<?php echo $hs?>" />
+        <!-- change to actual name of Landing. Name with uppercased letters -->
+        <input type="hidden" name="landing" value="CBB" />
+        <button class="form__btn" type="submit">Подключиться к проекту</button>
+      </div>
+    </form>
+  </div>
+  <!-- <img src="../img/fourth/fourth-bg.png" alt="рука с телефоном" class="fourth__bg-bottom"> -->
+</section>

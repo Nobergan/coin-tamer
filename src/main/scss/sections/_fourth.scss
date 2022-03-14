@@ -1,0 +1,83 @@
+.fourth {
+  position: relative;
+  padding: 46px 0 140px;
+
+  background-image: url("../../img/fourth/fourth-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 60%;
+  background-position: bottom;
+  z-index: 1;
+
+  @include for-size(desktop) {
+    padding: 120px 0;
+
+    background-image: url("../../img/fourth/fourth-bg-desk.png");
+    background-size: 101%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .fourth {
+    background-image: url("../../img/fourth/fourth-bg-desk.png");
+  }
+
+  .fourth__hand {
+    display: none;
+  }
+}
+
+.fourth__hand {
+  position: absolute;
+  top: 227px;
+  right: 0px;
+  z-index: -1;
+}
+
+.fourth .container {
+  @include for-size(desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.fourth__flex {
+  @include for-size(tablet) {
+    max-width: 469px;
+    margin: 0 auto;
+  }
+
+  @include for-size(desktop) {
+    max-width: 469px;
+    margin-right: 68px;
+  }
+}
+
+.fourth__title {
+  margin-bottom: 27px;
+
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.2;
+
+  color: #000000;
+
+  @include for-size(desktop) {
+    margin-bottom: 36px;
+    font-size: 32px;
+  }
+}
+
+.fourth__text {
+  margin-bottom: 77px;
+
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #000000;
+
+  @include for-size(desktop) {
+    font-size: 16px;
+  }
+}
